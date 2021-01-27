@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/gen_fibonaci"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="188dp"
+        android:background="@color/btnfondo"
+        android:text="Fibonaci"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_pares"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="119dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/btnfondo"
+        android:text="Replica Pares"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gen_fibonaci" />
+
+    <Button
+        android:id="@+id/btn_binario"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="102dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginLeft="149dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/btnfondo"
+        android:text="Replica Binario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pares" />
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:text="Series Numericas"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
